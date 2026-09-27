@@ -1,54 +1,41 @@
 ---
 title: "Pre-orders"
-description: "Order Pokecoins when we are out of stock"
+description: "Order Pokécoins when we are out of stock"
 ---
 
-Pre-orders let you place an order when we are temporarily out of stock. Your order is queued and delivered once stock is replenished.
+Pre-orders let you place an order when our instant stock runs out. Your order is queued and delivered from our daily delivery capacity, in batches spread over the scheduled days.
 
-## When pre-orders are triggered
+## When an order becomes a pre-order
 
-You enter pre-order mode when:
+There is no separate pre-order screen — the checkout handles it automatically on **step 1 (Amount)**:
 
-- **Stock is 0**: You see "Temporarily Out of Stock" immediately when visiting the purchase page
-- **Your quantity exceeds stock**: After entering an amount larger than current stock
+- **Your quantity exceeds current stock** — the part that fits in stock ships instantly, and the rest is scheduled. This is a **hybrid** order.
+- **Stock is 0** — the banner reads "Out of stock right now. Every order is a pre-order, delivered from our daily capacity."
+- **Pre-orders are closed** — occasionally the store pauses pre-orders entirely ("Pre-orders are closed right now"), in which case only in-stock amounts can be ordered.
 
-In both cases, click "Start Pre-Order" to continue.
+![Checkout step 1 with an amount above stock — the delivery panel shows instant and scheduled batches](/images/checkout-preorder.png)
 
-![IMAGE PLACEHOLDER: Out of stock screen with Start Pre-Order button](https://ik.imagekit.io/awnish90/pree.png)
+## How the delivery estimate works
 
-## Pre-order mode
+As you change the amount, the **Delivery** panel in the right column updates live:
 
-Once you click "Start Pre-Order," the purchase page changes:
+- **Instant** — "Today XM Instant": that portion is delivered immediately after payment.
+- **Pre-order** — dated rows like "Sep 28 400M Pre-order": each day's batch, up to our daily capacity.
 
-- Purple theme instead of blue
-- "PRE-ORDER MODE" badge displayed
-- A delivery estimate panel appears
-
-![IMAGE PLACEHOLDER: Purchase page in pre-order mode showing purple theme and delivery estimate](https://ik.imagekit.io/awnish90/preeee.png)
-
-## Delivery estimate
-
-The delivery estimate panel shows:
-
-- **Expected delivery date**: When your order should be completed
-- **Wait time**: Approximate number of days
-
-This estimate updates in real-time as you change your quantity.
-
-![IMAGE PLACEHOLDER: Close-up of delivery estimate panel](https://ik.imagekit.io/awnish90/preeclose.png)
+Each market ID row on step 2 is tagged **Instant**, **Pre-order**, or **Split**, so you know exactly which listings fill when.
 
 ## After placing a pre-order
 
-1. Complete payment as normal
-2. Your order enters the queue
-3. Check your order in the [Orders](/orders) section
-4. Receive an email when delivery is complete
+1. Complete payment as normal — pre-orders are paid up front like any order.
+2. Your order enters the delivery queue.
+3. Track progress on the [order details page](/view-order) — it shows "XM of YM delivered" and the next scheduled batch.
+4. You get an email when delivery completes.
 
-Pre-orders show "PRE-ORDER" label in your order history.
+Pre-orders show a **Pre-order** (or **Hybrid**) tag in your order history, and partially filled orders show the **Partially delivered** status.
 
 ## Pricing
 
-Same pricing and pack discounts as instant orders.
+Pre-orders use the same per-million price and pack discounts as instant orders — you keep the discount even though delivery is scheduled.
 
 ---
 

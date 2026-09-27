@@ -3,31 +3,31 @@ title: "Payment security"
 description: "How your payment information is protected and why we never have access to your card details"
 ---
 
-Payment security is fundamental to Right Spot. This page explains in detail how your financial information is protected and why you can trust that your payment credentials are never exposed to us.
+Payment security is fundamental to Radium Store. This page explains in detail how your financial information is protected and why you can trust that your payment credentials are never exposed to us.
 
 ## The key point: We never see your card details
 
-When you pay with a credit or debit card on Right Spot, you are redirected to PayPal's secure checkout page. Your card information is entered directly on PayPal's website-not on ours. This is not just a policy; it is how the entire payment system is designed.
+When you pay with a credit or debit card on Radium Store, the card form lives inside PayPal's secure checkout window — PayPal's official page, not ours. This is not just a policy; it is how the entire payment system is designed.
 
 Here is what happens when you pay with a card through PayPal:
 
-1. You click to pay and are redirected to PayPal's official website (paypal.com)
+1. You click the PayPal button and PayPal's secure checkout (paypal.com) opens in its own window
 2. You enter your card details directly into PayPal's secure form
 3. PayPal encrypts and processes the payment with your card issuer
-4. PayPal sends Right Spot only a confirmation that payment was successful
-5. You are redirected back to Right Spot to see your order confirmation
+4. PayPal sends Radium Store only a confirmation that payment was successful
+5. The PayPal window closes and your order page shows the confirmation
 
-**At no point does your card number, expiration date, or security code pass through Right Spot servers. We never see it. We cannot see it. The system does not allow it.**
+**At no point does your card number, expiration date, or security code pass through Radium Store servers. We never see it. We cannot see it. The system does not allow it.**
 
-![IMAGE PLACEHOLDER: Payment flow diagram showing user going to PayPal, entering card there, and Right Spot receiving only confirmation](https://ik.imagekit.io/awnish90/image45.png)
+![Payment flow diagram: the buyer pays on PayPal and the store receives only a confirmation](https://ik.imagekit.io/awnish90/image45.png)
 
 ## How PayPal protects your card information
 
-PayPal is one of the world's largest payment processors, handling over $1.36 trillion in payment volume annually. When you pay through PayPal-whether using your PayPal balance or a card-your financial information stays with PayPal.
+PayPal is one of the world's largest payment processors, handling over $1.36 trillion in payment volume annually. When you pay through PayPal—whether using your PayPal balance or a card—your financial information stays with PayPal.
 
 ### What PayPal's merchant protection means for you
 
-According to PayPal's official documentation, merchants (like Right Spot) receive only:
+According to PayPal's official documentation, merchants (like Radium Store) receive only:
 
 - A transaction ID confirming the payment
 - The payment amount
@@ -65,13 +65,13 @@ This statement comes directly from PayPal and applies to all transactions, inclu
 
 The payment flow is designed at a technical level to prevent merchants from accessing card data:
 
-**Redirect-based checkout**: When you click "Pay with PayPal," your browser navigates to paypal.com. You are no longer on our website. The form you fill out is PayPal's form, hosted on PayPal's servers, secured by PayPal's SSL certificate.
+**PayPal-hosted checkout**: When you click "Pay with PayPal," PayPal's checkout opens in its own window or overlay, hosted on PayPal's servers and secured by PayPal's SSL certificate. The card form you fill out belongs to PayPal — it is never a form on our page.
 
 **No card data transmission to merchants**: PayPal's API for merchants uses tokens and transaction IDs. There is no API endpoint that would allow us to request your card details, even if we wanted to. PayPal simply does not offer that capability.
 
 **PCI DSS compliance architecture**: PayPal is PCI DSS Level 1 certified—the highest level of payment card industry security certification. Part of how they maintain this certification is by architecturally preventing card data from reaching merchants.
 
-![Paypal's Diagram](https://ik.imagekit.io/awnish90/image45454.png)
+![PayPal flow diagram: card details stay with PayPal and only a transaction confirmation reaches the store](https://ik.imagekit.io/awnish90/image45454.png)
 
 ## How each payment method protects you
 
@@ -79,9 +79,9 @@ The payment flow is designed at a technical level to prevent merchants from acce
 
 When you pay with a card through PayPal:
 
-- You enter card details on PayPal's secure website
+- You enter card details in PayPal's secure checkout
 - PayPal encrypts and processes the payment
-- Right Spot receives only a transaction confirmation
+- Radium Store receives only a transaction confirmation
 - Your card details never touch our systems
 
 **What we receive**: Transaction ID, payment amount, confirmation of success.
@@ -92,7 +92,7 @@ When you pay with a card through PayPal:
 
 When you pay with your PayPal balance:
 
-- You authorize payment directly on PayPal's website
+- You authorize payment inside PayPal's checkout
 - Your PayPal credentials never leave PayPal
 - We receive only confirmation of payment
 
@@ -102,7 +102,7 @@ When you pay with your PayPal balance:
 
 ### UPI (India)
 
-UPI payments are processed through UPI Gateway:
+UPI payments are processed through Razorpay:
 
 - You authorize in your UPI app using your PIN
 - Your UPI PIN never leaves your device
@@ -114,7 +114,7 @@ UPI payments are processed through UPI Gateway:
 
 ### Litecoin
 
-Cryptocurrency payments work on the blockchain:
+Cryptocurrency payments work on the blockchain via NOWPayments:
 
 - You send LTC from your wallet using your private keys
 - Your wallet credentials never leave your device
@@ -126,9 +126,9 @@ Cryptocurrency payments work on the blockchain:
 
 ## What this means in practice
 
-### If Right Spot were ever breached
+### If Radium Store were ever breached
 
-In the hypothetical scenario of a security breach at Right Spot, your payment credentials would remain completely safe because:
+In the hypothetical scenario of a security breach at Radium Store, your payment credentials would remain completely safe because:
 
 - We do not have your card numbers—PayPal does
 - We do not have your PayPal password—PayPal does
@@ -141,15 +141,15 @@ The most sensitive information on our systems is your email address and Discord 
 
 When you reach the payment step:
 
-1. Look at your browser's address bar-you will see "paypal.com," not our domain
+1. The PayPal checkout runs on PayPal's domain — you can see it in the popup window's address bar
 2. The SSL certificate (padlock icon) shows PayPal's certificate, not ours
-3. Any card form you fill out is on PayPal's page
+3. Any card form you fill out is PayPal's form
 
 This is not a claim you need to take on faith. You can observe it directly every time you make a payment.
 
 ## Additional security measures
 
-Beyond payment architecture, Right Spot implements:
+Beyond payment architecture, Radium Store implements:
 
 **HTTPS everywhere**: All connections to our site use modern TLS encryption.
 
@@ -165,19 +165,19 @@ Beyond payment architecture, Right Spot implements:
   <Accordion title="Do you store my card for future purchases?">
     No. We do not store card details because we never receive them. Each purchase requires entering your card information on PayPal again. This is by design—there is no card data on our end to store.
   </Accordion>
-  
+
   <Accordion title="Why can't you just show me a card form on your site?">
-    Displaying a card form on our site would require us to handle card data, which would create security risks and compliance obligations. By redirecting to PayPal, your card data stays in PayPal's secure environment. This is the safer approach.
+    Displaying a card form on our site would require us to handle card data, which would create security risks and compliance obligations. By handing payment to PayPal, your card data stays in PayPal's secure environment. This is the safer approach.
   </Accordion>
-  
+
   <Accordion title="Is PayPal safe to use?">
     PayPal has been processing payments since 1998 and handles transactions for over 400 million active accounts worldwide. They are PCI DSS Level 1 certified and invest heavily in security. They also offer buyer protection if something goes wrong with a purchase.
   </Accordion>
-  
+
   <Accordion title="What if I don't have a PayPal account?">
-    You do not need a PayPal account to pay with a card. On PayPal's checkout page, there is an option to pay with a debit or credit card without creating an account. Your card is still processed securely through PayPal.
+    You do not need a PayPal account to pay with a card. On PayPal's checkout, there is an option to pay with a debit or credit card without creating an account (where available). Your card is still processed securely through PayPal.
   </Accordion>
-  
+
   <Accordion title="Can I see proof that you don't receive card data?">
     Yes. When you check out, open your browser's developer tools (F12) and go to the Network tab. You will see that when you enter card details, the data is sent to paypal.com domains, not to our servers. The only data we receive from PayPal is a transaction confirmation.
   </Accordion>
@@ -185,10 +185,10 @@ Beyond payment architecture, Right Spot implements:
 
 ## Summary
 
-Your payment security on Right Spot is guaranteed by the fact that we use PayPal as our payment gateway. Your card information goes directly to PayPal, is processed by PayPal, and stays with PayPal. We receive only confirmation that you paid—nothing more.
+Your payment security on Radium Store is guaranteed by the fact that we use PayPal as our payment gateway. Your card information goes directly to PayPal, is processed by PayPal, and stays with PayPal. We receive only confirmation that you paid—nothing more.
 
 This is not a promise or a policy. It is how the payment system is built. There is no mechanism for us to access your card details even if we wanted to.
 
 ---
 
-This concludes the security documentation. Return to [Documentation home](/introduction) or explore other sections using the sidebar navigation.
+This concludes the security documentation. Return to [Documentation home](/) or explore other sections using the sidebar navigation.

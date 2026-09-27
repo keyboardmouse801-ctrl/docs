@@ -3,101 +3,67 @@ title: "View your order"
 description: "Access and understand your order details page"
 ---
 
-The order details page shows all information about a specific order including status, tracking timeline, and payment details.
+The order details page shows everything about a single order — live delivery progress, the tracking timeline, market IDs, receipt, and support links.
 
 ## Accessing the order page
 
-There are three ways to access your order:
+There are three ways to open it:
 
-**From the confirmation page**: After payment completes, you see the confirmation page. Click the "Track Order" button to go to the order details page.
+- **From the confirmation page** — after payment completes, the confirmation screen links to **Track order**.
+- **From email** — the confirmation email includes a tracking link. These links carry an access key, so they work even on a device where you are not logged in.
+- **From the dashboard** — open **Orders** and click any order, or use the search palette (Ctrl+K) to jump straight to it.
 
-![IMAGE PLACEHOLDER: Confirmation page with Track Order button](https://ik.imagekit.io/awnish90/image17.png)
-
-**From email**: The payment confirmation email includes a "Track Order" button that takes you to your dashboard where you can view your orders.
-
-**From dashboard**: Go to **Orders** in the sidebar, click any order to view its details.
-
-You must be logged in to view your orders.
-
-![IMAGE PLACEHOLDER: Full order details page](https://ik.imagekit.io/awnish90/image19.png)
-
-![image23](https://ik.imagekit.io/awnish90/image20.png)
+![Order details page showing status, progress, and order cards](/images/order-detail.png)
 
 ---
 
 ## Page layout
 
-### Status header
+### Order header
 
-The top section shows:
+The hero at the top shows:
 
-- **Status badge**: Current order state (PROCESSING, DELIVERED, DELAYED, etc.)
-- **Last updated**: When the status was last changed
-- **Progress bar**: Visual progress through Placed → Processing → Delivered
+- **Status pill** — the current state (Processing, Partially delivered, Delivered, Awaiting payment, etc.)
+- **Type tag** — Instant, Pre-order, or Hybrid
+- **Placed date** and a headline like "300M Pokécoins" with a delivery summary
+- **Complete Payment** button if the order is still unpaid — it takes you back to the payment step
+- **Copy market IDs** button once the order is paid
 
-![IMAGE PLACEHOLDER: Status header with progress bar](https://ik.imagekit.io/awnish90/image24.png)
+![Full order details page with market IDs, activity timeline, receipt, and details](/images/order-detail-full.png)
 
-### Tracking timeline
+### Progress
 
-Shows all status updates in chronological order. Each entry includes:
+For orders being delivered, a progress bar shows **"XM of YM delivered"**, plus **"n of m market IDs filled · 50M per ID"** and, for scheduled orders, the next batch date.
 
-- Status name
-- Timestamp (date and time)
-- Message describing the update
+### Stat cards
 
-For partial deliveries, shows amount delivered vs total. For delays, shows new expected date.
+- **Delivered** — how much has been sent so far
+- **Remaining** — how much is still queued, with the final scheduled date
+- **Paid** / **Amount due** — the payment total and method
+- **Expires in** / **Last update** — time left to pay (unpaid orders) or when the order last changed
 
-![IMAGE PLACEHOLDER: Tracking timeline with updates](https://ik.imagekit.io/awnish90/image21.png)
+### Market IDs
 
-### Order information
+One row per market ID in the order: the ID (with a copy button), its amount, whether it is the Instant, Pre-order, or Split side of the order, and its own status — e.g. "Delivered · Sep 26" or "Scheduled · Sep 29".
 
-Two-column layout with:
+### Activity timeline
 
-**Identity Details**
-- Order number (with copy button)
-- Discord username
-- Email address
+Every status change with a timestamp — order placed, each delivery batch ("50M delivered (300M total)"), delays, and completion. This is the same timeline described in [Tracking statuses](/statuses).
 
-**Market Details**
-- Market ID(s) where coins are delivered
-- Amount per market ID
+### Receipt
 
-**Payment Details**
-- Payment method
-- Payment status
-- Payment ID (with copy button)
+A receipt-style card: Pokécoins × price per million, pack discount, **Processing fee: Free**, total paid or due, payment method, and the payment ID with a copy button.
 
-**Timestamps**
-- Order placed date/time
-- Last updated date/time
-- Expected delivery (for pre-orders)
+### Details and help
 
-![IMAGE PLACEHOLDER: Order information section](https://ik.imagekit.io/awnish90/image30.png)
-
-### Order summary
-
-Receipt-style breakdown:
-
-- Pokecoin amount and type (Instant or Pre-Order)
-- Price per million
-- Processing fee
-- Total paid
-- Estimated delivery info
-
-![IMAGE PLACEHOLDER: Order summary card](https://ik.imagekit.io/awnish90/image31.png)
-
-### Support section
-
-Quick links to:
-
-- Contact Support
-- FAQs
+- **Details** — placed/updated timestamps, your Discord handle, and your email.
+- **Help** — "Problem with this order?" links to our [Discord server](https://discord.gg/TfKV8Xeh2r); support can look the order up by its number.
 
 ---
 
 ## Real-time updates
 
-The page polls for updates every 5 seconds. Status changes appear automatically without refreshing.
+The page refreshes its data automatically about every 5 seconds — status, progress, and the timeline update in place until the order reaches a final state. No reload needed.
 
 ---
 

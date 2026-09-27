@@ -3,74 +3,80 @@ title: "Tracking statuses"
 description: "Understand the meaning of each order status"
 ---
 
-Orders progress through several statuses from placement to completion. This page explains what each status means.
+Orders move through several statuses from placement to completion. This page explains what each one means.
 
-## Order statuses
+## Statuses you will see
 
 | Status | Meaning |
 |--------|---------|
-| Processing | Order is being processed |
-| Delivered (Complete) | Order fully delivered |
-| Delayed | Delivery has been delayed |
-| Partially Delivered | Part of your order has been delivered |
-| Failed / Cancelled | Order could not be completed |
+| Awaiting payment | Order created but not paid yet — held for 24 hours |
+| Payment received | Payment confirmed, delivery is being set up |
+| Processing | Order is being fulfilled |
+| Partially delivered | Part of the order has been delivered (common for large pre-orders) |
+| Delayed | Delivery has been delayed — the timeline shows the new date |
+| Delivered | Delivery finished |
+| Completed | Order fully complete |
+| Failed | Order could not be completed |
+| Cancelled | Order was cancelled (e.g. expired unpaid) |
 
 ---
 
 ## Normal progression
 
-A successful order follows this path:
+A successful instant order follows this path:
 
 ```
-Order Placed → Processing → Completed
+Order placed → Processing → Delivered
 ```
 
-The progress bar on your order page shows these three stages: **Placed → Processing → Delivered**.
-
-For instant orders, this usually completes within seconds. For pre-orders, processing begins when stock is available.
+For instant orders this usually completes within seconds. Pre-orders and hybrid orders stay in **Processing** / **Partially delivered** until their scheduled batches finish.
 
 ---
 
 ## Status descriptions
 
+### Awaiting payment
+
+The order exists but no payment has arrived. It is held for **24 hours** — resume it from **Incomplete orders** on the Overview or by clicking it in Orders. After 24 hours it expires automatically.
+
+### Payment received
+
+Payment confirmed; the delivery pipeline is being prepared. Instant orders move on in seconds.
+
 ### Processing
 
-Your order is being fulfilled. For instant orders, this is brief. For pre-orders, this may take longer depending on your position in the queue, often a few days.
+Your order is being fulfilled. For instant orders this is brief; for pre-orders it lasts until your queued batches complete.
 
-### Delivered (Complete)
+### Partially delivered
 
-Your order is completed. All Pokecoins have been delivered to your market ID.
+Part of your order has been delivered — typical for hybrid orders and pre-orders fulfilled in daily batches. The order page shows "XM of YM delivered" plus the next batch date.
 
 ### Delayed
 
-Your order delivery has been delayed. The tracking timeline shows the new expected delivery date.
+Delivery has been delayed. The activity timeline shows the new expected date, and you get an email notification.
 
-You will receive an email notification when an order is delayed.
+### Delivered / Completed
 
-### Partially Delivered
-
-Part of your order has been delivered. This can happen with large pre-orders that are fulfilled in batches.
-
-The tracking timeline shows:
-- Amount delivered so far
-- Remaining amount
+All Pokécoins have been delivered to your market listings. The order is done.
 
 ### Failed / Cancelled
 
-The order could not be completed. Check the tracking timeline for the reason.
-
-Contact support if you need assistance.
+The order could not be completed, or an unpaid order was cancelled/expired. Check the activity timeline for the reason and contact support on [Discord](https://discord.gg/TfKV8Xeh2r) if you need help — a failed payment never means lost money.
 
 ---
 
 ## Tracking timeline
 
-Each order has a tracking timeline that shows all status updates with timestamps and messages. Special updates like partial deliveries and delays include additional information:
+Every order has an activity timeline on its details page with timestamped updates:
 
-- **Partial delivery**: Shows amount delivered vs total
-- **Delay**: Shows new expected delivery date
+- **Order placed** — the order was created
+- **Processing** — fulfilment started
+- **Partially delivered** — shows "XM delivered (YM total)"
+- **Delayed** — shows the new expected date
+- **Delivered** — the order finished
+- **Failed** — the order could not complete
 
-![order status](https://ik.imagekit.io/awnish90/image21.png)
+![Order details page showing the activity timeline](/images/order-detail-full.png)
 
 ---
 

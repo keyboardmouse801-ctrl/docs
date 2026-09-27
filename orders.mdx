@@ -1,54 +1,54 @@
 ---
 title: "Orders"
-description: "View and manage your order history in the Right Spot dashboard"
+description: "View and manage your order history in the Radium Store dashboard"
 ---
 
-The Orders section provides a comprehensive view of all your purchases, including active orders awaiting delivery and your complete purchase history.
+The Orders section provides a complete view of all your purchases — active orders awaiting delivery, unpaid orders you can still resume, and your full order history.
 
 ## Viewing your orders
 
-Navigate to **Orders** in the sidebar to access your order list. Orders are displayed in reverse chronological order, with your most recent orders appearing first.
+Navigate to **Orders** in the side rail (or the bottom tab bar on mobile) to open your order list. Orders are shown newest first, eight per page, with pagination controls at the bottom.
 
-![IMAGE PLACEHOLDER: Orders list view](https://ik.imagekit.io/awnish90/orddders.png)
+![Orders page with status filter chips, search, and CSV export](/images/orders.png)
 
 ## Order information
 
-Each order entry displays the following information:
+Each order row displays:
 
-**Reference number**: A unique identifier for the order, formatted as `ORD-` followed by a timestamp-based code. Use this reference when contacting support about a specific order.
+**Order number** — a unique identifier formatted as `RS-` followed by a number. Use this reference when contacting support about a specific order.
 
-**Pokecoin amount**: The quantity of Pokecoins purchased in this order.
+**Pokécoin amount** — the quantity of Pokécoins in the order, in millions (M).
 
-**Total paid**: The payment amount in your selected currency.
+**Status pill** — the current state of the order (see [tracking statuses](/statuses) for details).
 
-**Status**: The current state of the order (see [tracking statuses](/statuses) for details).
+**Type tag** — Instant, Pre-order, or Hybrid (part instant, part scheduled).
 
-**Date**: When the order was placed.
+**Total and date** — the amount paid and when the order was placed.
 
 ## Filtering and searching
 
-For accounts with extensive order history, the orders page includes filtering options:
+The orders page includes:
 
-**Status filter**: View only orders with a specific status, such as delivered orders or pending payments.
+**Status chips**: **All**, **Completed**, **Processing**, and **Cancelled**, each with a count. Click a chip to show only matching orders.
 
-**Date range**: Filter orders within a specific time period.
+**Search**: type into "Search by ID, amount or status" to match an order by its number, Pokécoin amount, or status label.
 
-**Search**: Find orders by reference number or amount.
+<Note>
+Filters combine — for example, the Processing chip plus a search for `100M` shows only in-progress 100M orders.
+</Note>
 
 ## Order details
 
-Click any order to expand its details panel. The expanded view includes **Transaction information**, **Delivery information**, and **timeline**. Please refer to the [View your order](/view-order) guide to learn more.
-
-## Order status
-
-Each order displays a status indicator showing the current stage of your order. Statuses include pending, processing, delivered, and failed.
-
-For a complete explanation of each status and what it means, see [Tracking status](/statuses).
+Click any order to open its details page, which shows the delivery progress, tracking timeline, market IDs, receipt, and support options. See the [View your order](/view-order) guide for a full walkthrough.
 
 ## Exporting order history
 
-You can export your order history for your records. Click the export option at the top of the orders list to download a csv file containing your order data.
+Click **Export** at the top of the orders list to download `order_history.csv`. The file includes the order number, status, amount, Pokécoins, date, and payment status for every order — handy for your own records.
+
+## Order status
+
+Each order displays a status pill showing the current stage — for example Awaiting payment, Processing, Delayed, or Delivered. For a complete explanation of every status, see [Tracking statuses](/statuses).
 
 ---
 
-Learn about purchase analytics in [Trends](/trends) or understand order statuses in [Tracking statuses](/statuses).
+Open any order to see live progress in [View your order](/view-order), or check what each status means in [Tracking statuses](/statuses).
