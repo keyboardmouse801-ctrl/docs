@@ -1,43 +1,36 @@
 ---
 title: "PayPal"
-description: "Pay for your Pokecoins using PayPal"
+description: "Pay for your Pokécoins using PayPal"
 ---
 
-PayPal is one of the most popular payment methods on Right Spot, offering a familiar checkout experience with built-in buyer protection.
+PayPal is one of the most popular payment methods on Radium Store, offering a familiar checkout experience with built-in buyer protection.
 
 ## Requirements
 
 To pay with PayPal, you need:
 
-- A PayPal account (free to create)
+- A PayPal account (free to create), or a credit/debit card you can use on PayPal's guest checkout
 - Sufficient balance or a linked payment method in PayPal
 
 ## How to pay with PayPal
 
 <Steps>
   <Step title="Select PayPal at checkout">
-    When you reach the payment method selection step, choose **PayPal** from the available options.
-    
-    ![IMAGE PLACEHOLDER: PayPal selection at checkout](https://ik.imagekit.io/awnish90/Screenshot%202025-11-30%2014416.png)
+    On the payment method step, choose **PayPal** — "Cards and PayPal balance". The card shows the USD total you will be charged.
+
+    ![Payment method step with the PayPal option](/images/checkout-method.png)
   </Step>
-  
-  <Step title="Redirect to PayPal">
-    Click **Continue** to be redirected to the PayPal website. You will see the Right Spot order details and payment amount.
+
+  <Step title="Open PayPal checkout">
+    The payment step shows an embedded **PayPal button**. Clicking it opens PayPal's secure checkout in a popup window — you never enter card details on our page.
   </Step>
-  
-  <Step title="Log in to PayPal">
-    Enter your PayPal credentials to access your account. If you are already logged into PayPal in your browser, this step may be skipped. If you do not have a PayPal account and want to pay with card, refer to the [cards](/cards) section.
-    
+
+  <Step title="Approve the payment">
+    Log in to PayPal (or choose **Pay with Debit or Credit Card** to pay as a guest where available), review the amount, and approve.
   </Step>
-  
-  <Step title="Review and confirm">
-    PayPal displays the payment details. Review the amount and select your funding source (PayPal balance, linked card, or bank account).
-    
-    Click **Pay Now** to confirm the transaction.
-  </Step>
-  
-  <Step title="Return to Right Spot">
-    After confirming payment, you are automatically redirected back to Right Spot. Your order confirmation page displays the payment status and delivery progress.
+
+  <Step title="Payment confirmed">
+    When PayPal approves, the popup closes and your order page updates to paid within seconds — then continues to the confirmation screen automatically.
   </Step>
 </Steps>
 
@@ -50,35 +43,33 @@ Through PayPal, you can pay using:
 - Linked credit cards
 - Linked bank accounts
 
-PayPal handles the transaction with your selected funding source. Right Spot only receives confirmation that payment was successful. learn more about how your payment information like card info and other details are safe at the [payment security](/payment-security) section.
+PayPal handles the transaction with your selected funding source. Radium Store only receives confirmation that payment was successful. Learn more about how your card details stay safe in the [payment security](/payment-security) section.
 
 ## Processing time
 
-PayPal payments typically process instantly. Once you confirm payment in PayPal and return to Right Spot, your order immediately moves to processing and delivery.
+PayPal payments confirm instantly. Once you approve the payment, your order immediately moves to processing and delivery.
 
 ## Currency handling
 
-PayPal handles currency conversion if your PayPal account currency differs from the order currency. Conversion rates are determined by PayPal and displayed before you confirm payment.
+PayPal orders are charged in **USD**. If your PayPal account uses a different currency, PayPal handles the conversion and shows the rate before you approve.
 
 ## PayPal fees
 
-PayPal may charge fees depending on your funding source and location. Any fees charged by PayPal are displayed in the PayPal interface before you confirm payment.
-
-Right Spot adds a $0.40 additional fees for PayPal transactions to prevent spam or abuse.
+Radium Store charges **no processing fee** on PayPal — the total shown on the method card is what you pay. (PayPal itself may apply its own conversion or cross-border fees, which it displays before you approve.)
 
 ## Troubleshooting
 
 <AccordionGroup>
-  <Accordion title="Not redirected back to Right Spot">
-    If you completed payment but were not redirected, return to Right Spot manually and check your dashboard. The payment should appear within a few minutes. If it does not, contact support with your PayPal transaction ID.
+  <Accordion title="Popup closed or payment not confirmed">
+    If the PayPal popup was closed before approving, the payment simply never happened — pick the method again or a different one. If you paid but the page did not update, wait a minute; the page polls every few seconds. If it still shows unpaid, contact support on [Discord](https://discord.gg/TfKV8Xeh2r) with your PayPal transaction ID.
   </Accordion>
-  
+
   <Accordion title="PayPal shows payment complete but order is pending">
     There may be a brief delay in payment notification. Wait 5-10 minutes and refresh your dashboard. If the order remains pending, contact support with your PayPal receipt.
   </Accordion>
-  
+
   <Accordion title="Payment declined by PayPal">
-    PayPal may decline transactions for various reasons including suspected fraud, insufficient funds, or account limitations. Review your PayPal account status or try a different payment method. This is something from your side, and you would have to contact PayPal support or your card provider to resolve.
+    PayPal may decline transactions for various reasons including suspected fraud, insufficient funds, or account limitations. Review your PayPal account status or try a different payment method. This is something on PayPal's side — you would have to contact PayPal support or your card provider to resolve it.
   </Accordion>
 </AccordionGroup>
 

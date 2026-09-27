@@ -1,11 +1,11 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Right Spot",
+  "name": "Radium Store",
   "colors": {
-    "primary": "#3B82F6",
-    "light": "#60A5FA",
-    "dark": "#1E40AF"
+    "primary": "#ff7530",
+    "light": "#ffa66b",
+    "dark": "#e54c00"
   },
   "favicon": "/favicon.png",
   "navigation": {
@@ -27,7 +27,6 @@
             "pages": [
               "overview",
               "orders",
-              "trends",
               "settings"
             ]
           },
@@ -71,15 +70,20 @@
     }
   },
   "logo": {
-    "light": "/logo/logo1.png",
-    "dark": "/logo/logo1.png"
+    "light": "/logo/logo.png",
+    "dark": "/logo/logo.png"
   },
   "navbar": {
-    "links": [],
+    "links": [
+      {
+        "label": "Discord",
+        "href": "https://discord.gg/TfKV8Xeh2r"
+      }
+    ],
     "primary": {
       "type": "button",
-      "label": "",
-      "href": "https://example.com"
+      "label": "Buy Pokécoins",
+      "href": "https://radiumstore.org/customer-dashboard/orders/place"
     }
   },
   "contextual": {
@@ -89,6 +93,9 @@
     ]
   },
   "footer": {
-    "socials": {}
+    "socials": {
+      "website": "https://radiumstore.org",
+      "discord": "https://discord.gg/TfKV8Xeh2r"
+    }
   }
 }

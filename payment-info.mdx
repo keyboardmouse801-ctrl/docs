@@ -1,24 +1,24 @@
 ---
 title: "Payment methods"
-description: "Overview of all accepted payment methods on Right Spot"
+description: "Overview of all accepted payment methods on Radium Store"
 ---
 
-Right Spot accepts multiple payment methods to accommodate customers worldwide. This page provides an overview of available options, with detailed instructions for each method in the linked pages.
+Radium Store accepts multiple payment methods to accommodate customers worldwide. This page provides an overview, with detailed instructions for each method in the linked pages.
 
 ## Available payment methods
 
 <CardGroup cols={2}>
   <Card title="PayPal" icon="paypal" href="/paypal">
-    Pay with PayPal balance or linked payment methods. Available worldwide.
+    PayPal balance, cards, and linked banks. Available worldwide, charged in USD.
   </Card>
   <Card title="Credit & Debit Cards" icon="credit-card" href="/cards">
-    Visa, Mastercard, American Express, and Discover accepted.
+    Visa, Mastercard, American Express, and Discover — processed through PayPal.
   </Card>
   <Card title="UPI" icon="building-columns" href="/upi">
-    Available for customers in India. All UPI apps supported.
+    Available for customers in India. All UPI apps supported, charged in INR.
   </Card>
   <Card title="Cryptocurrency" icon="bitcoin" href="/crypto">
-    Bitcoin, Litecoin, and other cryptocurrencies accepted.
+    Litecoin (LTC) via NOWPayments. Charged in USD, auto-confirms in 5–15 minutes.
   </Card>
 </CardGroup>
 
@@ -26,31 +26,30 @@ Right Spot accepts multiple payment methods to accommodate customers worldwide. 
 
 Consider these factors when selecting how to pay:
 
-**Speed**: Card payments and PayPal typically process instantly. UPI processes within seconds. Cryptocurrency requires blockchain confirmations, which can take several minutes.
+**Speed**: PayPal and card payments confirm instantly. UPI confirms within seconds. Litecoin needs blockchain confirmations — typically 5–15 minutes.
 
-**Availability**: PayPal and cards are available globally. UPI is limited to India. Cryptocurrency is available anywhere but requires a crypto wallet.
+**Availability**: PayPal and cards work globally. UPI is for India. Litecoin works anywhere but requires a crypto wallet.
 
-**Fees**: Payment processing fees vary by method. The checkout page displays the final amount including any applicable fees before you confirm payment.
+**Fees**: there are none on our side — every method shows **Processing fee: Free** at checkout. Your bank, PayPal, or wallet may apply their own conversion or network fees on their side.
 
 ## Payment security
 
 All payment processing is handled by established, trusted providers:
 
-- **PayPal**: Processed directly through PayPal
-- **Cards**: Processed through PayPal
-- **UPI**: Processed through UPI Gateway
-- **Crypto**: Processed through our NowPayments gateway
+- **PayPal and cards**: processed directly through PayPal
+- **UPI**: processed through Razorpay
+- **Crypto**: processed through NOWPayments
 
-Your payment information is never stored on Right Spot servers. See [Payment security](/payment-security) for detailed information about how your financial data is protected.
+Your payment information is never stored on Radium Store servers. See [Payment security](/payment-security) for detailed information about how your financial data is protected.
 
 ## Regional availability
 
-| Payment Method | Availability |
-|---------------|--------------|
-| PayPal | Worldwide |
-| Cards | Worldwide |
-| UPI | India only |
-| Cryptocurrency | Worldwide |
+| Payment Method | Availability | Charged in |
+|---------------|--------------|------------|
+| PayPal | Worldwide | USD |
+| Cards (via PayPal) | Worldwide | USD |
+| UPI | India | INR |
+| Litecoin | Worldwide | USD |
 
 ## Failed payments
 
@@ -58,7 +57,7 @@ If a payment fails, you can:
 
 1. Try the same payment method again
 2. Select a different payment method
-3. Contact support if the issue persists
+3. Contact support on [Discord](https://discord.gg/TfKV8Xeh2r) if the issue persists
 
 Common reasons for payment failure:
 
@@ -67,7 +66,7 @@ Common reasons for payment failure:
 - Payment timeout
 - Network connectivity issues
 
-Your order remains in pending status until payment completes or expires. You will not be charged for failed payment attempts.
+Your order stays in **Awaiting payment** until it is paid or expires — unpaid orders are held for 24 hours. You will not be charged for failed payment attempts.
 
 ---
 
